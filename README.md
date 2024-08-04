@@ -35,4 +35,7 @@ To install EncodeXpert, please do the following:
 18. Select "Open" under the Gatekeeper Alert.
 19. EncodeXpert will open.
 
-**Thanks for using EncodeXpert! :-)**
+**Thanks for installing EncodeXpert! :-)**
+
+# News
+v1.0.0: First version of EncodeXpert launched! 🎉
