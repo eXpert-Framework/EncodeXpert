@@ -43,8 +43,6 @@ To install EncodeXpert, please do the following:
 ## News
 v1.0.0: First version of EncodeXpert launched! 🎉
 
-EncodeXpert website launched! [https://andrew414e44524557.github.io/EncodeXpert/](url)
-
 ## Bug Tracking
 Latest build
 
