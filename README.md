@@ -58,7 +58,7 @@ v1.0.1-alpha: Intel-based Macs can run the app with this Alpha build!
 ## Bug Tracking
 Latest build
 
-| Bug                                                   | Resolution                                             |
+| Bug / Missing Feature                                 | Resolution                                             |
 | ----------------------------------------------------- | ------------------------------------------------------ |
 | MacOS Gatekeeper may detect the app as a malware      | Potential fix identified - for future updates          |
 | The app icon is "too big" mesaured to other Mac apps  | Resolution: Open                                       |
