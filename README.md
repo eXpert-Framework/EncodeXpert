@@ -48,15 +48,17 @@ To install EncodeXpert, please do the following:
 ## News
 v1.0.0: First version of EncodeXpert launched! 🎉
 
+v1.0.1-alpha: Intel-based Macs can run the app with this Alpha build!
+
 ## Bug Tracking
 Latest build
 
 | Bug                                                   | Resolution                                             |
 | ----------------------------------------------------- | ------------------------------------------------------ |
 | MacOS Gatekeeper may detect the app as a malware      | Potential fix identified - for future updates          |
-| The app icon is "too big" mesaured to other Mac apps  | Open                                                   |
+| The app icon is "too big" mesaured to other Mac apps  | Resolution: Open                                       |
 | The app is not truly native, packages required to run | Potential fix identified - for future updates          |
-| Intel-based Macs can't run the application            | Potential fix identified - for future updates          |
+| Intel-based Macs can't run the application            | Resolved in v1.0.1-alpha                               |
 
 ## Special thanks
 Special thanks to my programming teacher for helping and motivating me. :-)
