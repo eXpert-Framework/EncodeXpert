@@ -9,6 +9,8 @@ To install EncodeXpert, please do the following:
 
 
 
+
+
 1. Please donwload EncodeXpert.dmg from GitHub.
 
 <img width="237" alt="Latest-Relase" src="https://github.com/user-attachments/assets/3ce15910-55a7-4241-8326-e800be20305e">
