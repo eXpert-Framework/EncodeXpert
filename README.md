@@ -13,9 +13,11 @@ To install EncodeXpert, please do the following:
 3. "EncodeXpert" volume will automatically open.
 4. Please double-click the installer app.
 5. MacOS Gatekeeper alert may appear:
+
 >"EncodeXpert_Installer" cannot be open because the developer cannot be verified.
 6. Please control-click the installer and select "Open"
 7. MacOS Gatekeeper alert may appear:
+
 >"EncodeXpert_Installer" may harm your Mac. Do you want to open it?
 8. Select "Open" under the Gatekeeper alert.
 9. The installer will open.
@@ -28,12 +30,15 @@ To install EncodeXpert, please do the following:
 11. If Python is installed, please install the Tkinter framework.
 12. The installer will do this for you, if you allow this.
 13. The installer dialog should appear:
+
 >Successfully installed!
 14. Please drag EncodeXpert into the Applications folder.
 15. When you first open EncodeXpert, a MacOS Gatekeeper dialog may appear:
+
 >"EncodeXpert" cannot be opened because the developer cannot be verified.
 16. Please control-click the installer and select open.
 17. MacOS Gatekeeper alert may appear:
+
 >"EncodeXpert' may harm your Mac. Do you want to open it?
 18. Select "Open" under the Gatekeeper Alert.
 19. EncodeXpert will open.
