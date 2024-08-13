@@ -51,19 +51,22 @@ To install EncodeXpert, please do the following:
 **Thanks for installing EncodeXpert! :-)**
 
 ## News
-v1.0.0: First version of EncodeXpert launched! 🎉
+**v1.0.0:** First version of EncodeXpert launched! 🎉
 
-v1.0.1-alpha: Intel-based Macs can run the app with this Alpha build!
+**v1.0.1-alpha:** Intel-based Macs can run the app with this Alpha build!
+
+**Bugs:** Thanks to my friend, _David_ for reporting bug 5.
 
 ## Bug Tracking
 Latest build
 
-| Bug / Missing Feature                                 | Resolution                                             |
-| ----------------------------------------------------- | ------------------------------------------------------ |
-| MacOS Gatekeeper may detect the app as a malware      | Potential fix identified - for future updates          |
-| The app icon is "too big" mesaured to other Mac apps  | Resolution: Open                                       |
-| The app is not truly native, packages required to run | Potential fix identified - for future updates          |
-| Intel-based Macs can't run the application            | Resolved in v1.0.1-alpha                               |
+| Bug / Missing Feature                                           | Resolution                                             |
+| --------------------------------------------------------------- | ------------------------------------------------------ |
+| MacOS Gatekeeper may detect the app as a malware                | Potential fix identified - for future updates          |
+| The app icon is "too big" mesaured to other Mac apps            | Resolution: Open                                       |
+| The app is not truly native, packages required to run           | Potential fix identified - for future updates          |
+| Intel-based Macs can't run the application                      | Resolved in v1.0.1-alpha                               |
+| The app's GUI is "falling apart" when toggling to fullscreen    | Potential fix identified - for future updates          |
 
 ## Special thanks
 Special thanks to my programming teacher for helping and motivating me. :-)
