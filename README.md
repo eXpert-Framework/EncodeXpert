@@ -44,4 +44,5 @@ v1.0.0: First version of EncodeXpert launched! 🎉
 
 ## Special thanks
 Special thanks to my programming teacher for helping and motivating me. :-)
+
 Special thanks to my friend, *David*, for alpha, beta, and prototype testing. :-)
