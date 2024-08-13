@@ -45,6 +45,16 @@ v1.0.0: First version of EncodeXpert launched! 🎉
 
 EncodeXpert website launched! [https://andrew414e44524557.github.io/EncodeXpert/](url)
 
+## Bug Tracking
+Latest build
+
+| Bug                                                   | Resolution                                             |
+| ----------------------------------------------------- | ------------------------------------------------------ |
+| MacOS Gatekeeper may detect the app as a malware      | Potential fix identified - for future updates          |
+| The app icon is "too big" mesaured to other Mac apps  | Open                                                   |
+| The app is not truly native, packages required to run | Potential fix identified - for future updates          |
+| Intel-based Macs can't run the application            | Potential fix identified - for future updates          |
+
 ## Special thanks
 Special thanks to my programming teacher for helping and motivating me. :-)
 
