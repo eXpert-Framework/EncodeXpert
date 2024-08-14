@@ -55,10 +55,6 @@ To install EncodeXpert, please do the following:
 
 **v1.0.1-alpha:** Intel-based Macs can run the app with this Alpha build!
 
-**Bugs:** Thanks to my friend, _David_ for reporting bug 5.
-
-**Bugs:** Thanks to my friend, _David_ for reporting bug 6.
-
 ## 🐞 Bug Tracking
 (Latest build)
 
