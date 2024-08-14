@@ -53,7 +53,9 @@ To install EncodeXpert, please do the following:
 ## 📰 News
 **v1.0.0:** First version of EncodeXpert launched! 🎉
 
-**v1.0.1-alpha:** Intel-based Macs can run the app with this Alpha build!
+**v1.0.1-beta:** Intel-based Macs can run the app with this Beta build¹!
+
+¹The app for Intel-based Macs is under development.
 
 ## 🐞 Bug Tracking
 (Latest build)
@@ -66,6 +68,13 @@ To install EncodeXpert, please do the following:
 | Intel-based Macs can't run the application                      | Resolved in v1.0.1-alpha                               |
 | The app's GUI is "falling apart" when toggling to fullscreen    | Potential fix identified - for future updates          |
 | "Alert" confirmation ask may pop up after running the Installer | Potential fix identified - for future updates          |
+
+## 🧪 Testing
+EncodeXpert has been tested on the following devices:
+- Apple iMac, M1 Chip
+- Apple iMac, Intel i5 Processor
+- Apple MacBook, M1 Chip
+- Apple MacBook, Intel i5 Processor
 
 ## 🙏 Special thanks
 Special thanks to my programming teacher for helping and motivating me. :-)
