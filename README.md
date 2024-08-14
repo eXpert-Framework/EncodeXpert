@@ -57,8 +57,10 @@ To install EncodeXpert, please do the following:
 
 **Bugs:** Thanks to my friend, _David_ for reporting bug 5.
 
+**Bugs:** Thanks to my friend, _David_ for reporting bug 6.
+
 ## Bug Tracking
-Latest build
+(Latest build)
 
 | Bug / Missing Feature                                           | Resolution                                             |
 | --------------------------------------------------------------- | ------------------------------------------------------ |
@@ -67,6 +69,7 @@ Latest build
 | The app is not truly native, packages required to run           | Potential fix identified - for future updates          |
 | Intel-based Macs can't run the application                      | Resolved in v1.0.1-alpha                               |
 | The app's GUI is "falling apart" when toggling to fullscreen    | Potential fix identified - for future updates          |
+| "Alert" confirmation ask may pop up after running the Installer | Potential fix identified - for future updates          |
 
 ## Special thanks
 Special thanks to my programming teacher for helping and motivating me. :-)
