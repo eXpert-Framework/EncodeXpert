@@ -70,11 +70,27 @@ To install EncodeXpert, please do the following:
 | "Alert" confirmation ask may pop up after running the Installer | Potential fix identified - for future updates          |
 
 ## 🧪 Testing
-EncodeXpert has been tested on the following devices:
+**EncodeXpert has been tested on the following devices:**
 - Apple iMac, M1 Chip
 - Apple iMac, Intel i5 Processor
 - Apple MacBook, M1 Chip
 - Apple MacBook, Intel i5 Processor
+
+## 💻 Requirements
+
+### ⚙️ Hardware
+**EncodeXpert runs on the following devices:**
+- MacBook: 2014 or earlier models
+- MacBook Air: mid-2012 or earlier models
+- MacBook Pro: mid-2012 or earlier models
+- Mac mini: 2012 or earlier models
+- iMac: late 2013 or earlier models
+- Mac Pro: 2012 or earlier models
+
+### 💡 OS
+**EncodeXpert runs on the following OSs:**
+- The application runs stably only on macOS Big Sur (version 11) or later.
+- The application does not run on macOS Sequoia (version 15), because of Gatekeeper.
 
 ## 🙏 Special thanks
 Special thanks to my programming teacher for helping and motivating me. :-)
