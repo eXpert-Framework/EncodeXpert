@@ -25,11 +25,10 @@ EncodeXpert is an open-source Python application with a Tkinter GUI, designed to
 9. The installer will open.
 10. Please install the latest version of the Python programming language:
 
- • If Python is installed, press [ENTER]
+- If Python is installed, press [ENTER]
+- If Python is not installed, please visit [https://python.org/downloads](url)
 
- • If Python is not installed, please visit [https://python.org/downloads](url)
-
-11. If Python is installed, please install the Tkinter framework.
+11. Once Python is installed, please install the Tkinter framework.
 12. The installer will do this for you, if you allow this.
 13. The installer dialog should appear:
 
@@ -57,7 +56,7 @@ EncodeXpert is an open-source Python application with a Tkinter GUI, designed to
 ¹The app for Intel-based Macs can be downloaded as an **unstable** version.
 
 ## 🐞 Bug Tracking
-(Latest build)
+**From the first version to the latest, our bugs were/are these:**
 
 | Bug / Missing Feature                                           | Resolution                                             |
 | --------------------------------------------------------------- | ------------------------------------------------------ |
