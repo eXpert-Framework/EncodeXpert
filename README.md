@@ -4,7 +4,7 @@
 EncodeXpert is an open-source Python application with a Tkinter GUI, designed to effortlessly encode and decode text in various formats. It supports Base64, Morse code, Caesar cipher, ROT13, binary, and hexadecimal conversions. Ideal for developers, cryptography enthusiasts, and anyone needing quick, offline text transformations.
 
 ## 📦 Installation Guide
-To install EncodeXpert, please do the following:
+**To install EncodeXpert, please do the following:**
 1. Please donwload EncodeXpert.dmg from GitHub.
 
 <img width="237" alt="Latest-Relase" src="https://github.com/user-attachments/assets/3ce15910-55a7-4241-8326-e800be20305e">
@@ -51,8 +51,7 @@ To install EncodeXpert, please do the following:
 **Thanks for installing EncodeXpert! :-)**
 
 ## 📰 News
-**v1.0.0:** First version of EncodeXpert launched! 🎉
-
+**v1.0.0:** First version of EncodeXpert launched! 🎉  
 **v1.0.1-beta:** Intel-based Macs can run the app with this Beta build¹!
 
 ¹The app for Intel-based Macs can be downloaded as an **unstable** version.
@@ -93,6 +92,7 @@ To install EncodeXpert, please do the following:
 - The application does not run on macOS Sequoia (version 15), because of Gatekeeper.
 
 ## 🙏 Special thanks
-Special thanks to my programming teacher for helping and motivating me. :-)
+**Special thanks to:**
 
+Special thanks to my programming teacher for helping and motivating me. :-)  
 Special thanks to my friend, *David*, for alpha, beta, and prototype testing. :-)
