@@ -88,7 +88,7 @@ EncodeXpert is an open-source Python application with a Tkinter GUI, designed to
 ### 💡 OS
 **EncodeXpert runs on the following OSs:**
 - The application runs stably only on macOS Big Sur (version 11) or later.
-- The application does not run on macOS Sequoia (version 15), because of Gatekeeper.
+- The application does not run on macOS Sequoia (version 15), due to Gatekeeper.
 
 ## 🙏 Special thanks
 **Special thanks to:**
