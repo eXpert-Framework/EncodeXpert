@@ -1,0 +1,171 @@
+/* Alapértelmezett stílusok */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Minimum magasság a teljes viewport magasságához */
+}
+
+/* Fejléc */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logó beállítások */
+.logo {
+    max-width: 150px; /* Maximum szélesség */
+    height: auto; /* Automatikus magasság, hogy megőrizze az arányait */
+    margin-right: 20px; /* Távolság a logó és a menüsáv között */
+}
+
+/* Navigációs menü beállítások */
+nav {
+    flex: 1; /* A navigációs sáv kitölti a fennmaradó helyet */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Egyenlő távolság a menüpontok között */
+    align-items: center; /* Függőleges középre igazítás */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a.github-icon {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Sötétebb háttér szín hover esetén */
+    border-radius: 4px; /* Lekerekített sarkok */
+}
+
+/* Szekciók rejtése és megjelenítése */
+.section-hidden {
+    display: none;
+}
+
+.section-visible {
+    display: block;
+}
+
+/* Fő tartalom */
+main {
+    padding: 20px;
+    flex: 1; /* Kitölti a fennmaradó helyet, hogy a lábléc a képernyő aljára kerüljön */
+}
+
+/* Requirements szekció */
+#requirements {
+    position: relative;
+}
+
+#requirements nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #e0e0e0; /* Háttérszín a navigációs menü számára */
+    border-radius: 4px;
+    overflow: hidden; /* Az alszekciók keretei nem lógnak ki */
+    width: fit-content; /* A szélesség igazítása az alszekciókhoz */
+    margin-bottom: 20px; /* Alsó margó az alszekciók alatt */
+}
+
+#requirements nav ul li {
+    margin: 0;
+}
+
+#requirements nav ul li a {
+    padding: 10px 15px;
+    display: block;
+    color: #333; /* Szöveg színe */
+    text-decoration: none;
+    background-color: #f0f0f0; /* Alszekciók háttérszíne */
+}
+
+#requirements nav ul li a:hover {
+    background-color: #ddd; /* Hover háttérszín */
+}
+
+#requirements .sub-section-container {
+    display: flex; /* Flexbox használata a két alszekció egymás melletti elrendezéséhez */
+    gap: 0; /* Nincs távolság a két alszekció között */
+}
+
+#requirements .sub-section {
+    flex: 1; /* Az alszekciók egyenlő szélességűek lesznek */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff; /* Alszekciók háttérszíne */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Finom árnyék a jobb láthatóság érdekében */
+    margin: 0; /* Nincs extra margó az alszekciók között */
+}
+
+/* Almenüpontok rejtése és megjelenítése */
+.sub-section-hidden {
+    display: none;
+}
+
+.sub-section-visible {
+    display: block;
+}
+
+/* Lábléc */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Lehetővé teszi a lábléc rögzítését az aljára */
+    bottom: 0; /* Alulra helyezés */
+    width: 100%; /* Kitölti az egész szélességet */
+}
+
+/* Reszponzív beállítások */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin: 0;
+        max-width: 120px; /* Kisebb logó a kisebb képernyőkön */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Margó a menüpontok között */
+    }
+
+    #requirements .sub-section-container {
+        flex-direction: column; /* Alszekciók oszlopokban lesznek kisebb képernyőkön */
+        gap: 10px; /* Kisebb távolság a kisebb képernyőkön */
+    }
+}
