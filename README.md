@@ -1,9 +1,18 @@
 ![EncodeXpert_logo](https://github.com/user-attachments/assets/4c45b31d-4e5e-4739-bdb9-272d96c582f6)
 
-# EncodeXpert
-EncodeXpert is an open-source Python application with a Tkinter GUI, designed to effortlessly encode and decode text in various formats. It supports Base64, Morse code, Caesar cipher, ROT13, binary, and hexadecimal conversions. Ideal for developers, cryptography enthusiasts, and anyone needing quick, offline text transformations.
+# Effortless Text Manipulation Made Simple
+EncodeXpert is a versatile tool designed for encoding and decoding text in various formats, including Base64, Morse code, Caesar cipher, ROT13, binary, and hexadecimal.  
+It provides quick and easy transformations without needing an internet connection.
 
-## 📦 Installation Guide
+## About
+EncodeXpert is an open-source application developed in Python with a Tkinter graphical user interface.  
+It is crafted to simplify the process of encoding and decoding text across multiple formats, catering to developers, cryptography enthusiasts, and anyone in need of efficient offline text transformations.
+
+## Download
+**To download EncodeXpert, please read the installation guide:**  
+(Step-by-step guide in it)
+
+## Installation Guide
 **To install EncodeXpert, please do the following:**
 1. Please donwload EncodeXpert.dmg from GitHub.
 
@@ -49,49 +58,49 @@ EncodeXpert is an open-source Python application with a Tkinter GUI, designed to
 
 **Thanks for installing EncodeXpert! :-)**
 
-## 📰 News
-**v1.0.0:** First version of EncodeXpert launched! 🎉  
-**v1.0.1:** Intel-based Macs can run the app with this build¹!
+## News
+**v1.0.0:** The first version of EncodeXpert has been released! 🎉  
+**v1.0.1:** Added support for Intel-based Macs in this build¹!  
 
-¹The app for Intel-based Macs can be downloaded as an **unstable** version.
+¹Please note that the Intel-based Mac version is classified as unstable.  
 
-## 🐞 Issues
-**From the first version to the latest, our bugs were/are these:**
+## Issues
 
-| Bug / Missing Feature                                           | Resolution                                             |
-| --------------------------------------------------------------- | ------------------------------------------------------ |
-| MacOS Gatekeeper may detect the app as a malware                | Potential fix identified - for future updates          |
-| The app icon is "too big" measured to other Mac apps            | Resolution: Open                                       |
-| The app is not truly native, packages required to run           | Potential fix identified - for future updates          |
-| Intel-based Macs can't run the application                      | Resolution: Resolved                                   |
-| The app's GUI is "falling apart" when toggling to fullscreen    | Potential fix identified - for future updates          |
-| "Alert" confirmation ask may pop up after running the Installer | Potential fix identified - for future updates          |
+**Here is a summary of known issues and their resolutions:**
 
-## 🧪 Testing
+| Issue                                                      |	Resolution                                  |
+| ---------------------------------------------------------- | -------------------------------------------- |
+| MacOS Gatekeeper may flag the app as malware               |	Potential fix identified for future updates |
+| The app icon appears oversized compared to other Mac apps  |	Resolution in progress                      |
+| The app is not truly native; additional packages required  |	Potential fix identified for future updates |
+| Intel-based Macs had trouble running the application       |	Resolved in recent update                   |
+| GUI issues when toggling fullscreen                        |	Potential fix identified for future updates |
+| Confirmation alerts may appear after running the installer | Potential fix identified for future updates  |
+
+## Testing
 **EncodeXpert has been tested on the following devices:**
-- Apple iMac, M1 Chip
-- Apple iMac, Intel i5 Processor
-- Apple MacBook, M1 Chip
-- Apple MacBook, Intel i5 Processor
 
-## 💻 Requirements
+- Apple iMac with M1 Chip
+- Apple iMac with Intel i5 Processor
+- Apple MacBook with M1 Chip
+- Apple MacBook with Intel i5 Processor
 
-### ⚙️ Hardware
-**EncodeXpert runs on the following devices:**
+## Requirements
+### Hardware
+**EncodeXpert is compatible with the following devices:**  
 - MacBook: 2014 or earlier models
 - MacBook Air: mid-2012 or earlier models
 - MacBook Pro: mid-2012 or earlier models
 - Mac mini: 2012 or earlier models
 - iMac: late 2013 or earlier models
-- Mac Pro: 2012 or earlier models
+- Mac Pro: 2012 or earlier models  
 
-### 💡 OS
-**EncodeXpert runs on the following OSs:**
-- The application runs stably only on macOS Big Sur (version 11) or later.
-- The application does not run on macOS Sequoia (version 15), due to Gatekeeper.
+### OS
+**EncodeXpert operates on the following OS versions:**
+- Runs stably on macOS Big Sur (version 11) or later
+- Does not run on macOS Sequoia (version 15) due to Gatekeeper restrictions
 
-## 🙏 Special thanks
-**Special thanks to:**
-
-Special thanks to my programming teacher for helping and motivating me. :-)  
-Special thanks to my friend, *David*, for alpha, beta, and prototype testing. :-)
+## Special Thanks
+**A heartfelt thanks to:**  
+- My programming teacher for their guidance and motivation.
+- My friend David for his invaluable alpha, beta, and prototype testing.
