@@ -61,7 +61,7 @@ EncodeXpert is an open-source Python application with a Tkinter GUI, designed to
 | Bug / Missing Feature                                           | Resolution                                             |
 | --------------------------------------------------------------- | ------------------------------------------------------ |
 | MacOS Gatekeeper may detect the app as a malware                | Potential fix identified - for future updates          |
-| The app icon is "too big" mesaured to other Mac apps            | Resolution: Open                                       |
+| The app icon is "too big" measured to other Mac apps            | Resolution: Open                                       |
 | The app is not truly native, packages required to run           | Potential fix identified - for future updates          |
 | Intel-based Macs can't run the application                      | Resolution: Resolved                                   |
 | The app's GUI is "falling apart" when toggling to fullscreen    | Potential fix identified - for future updates          |
