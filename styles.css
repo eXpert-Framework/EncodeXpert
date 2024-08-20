@@ -1,14 +1,12 @@
-/* Alapértelmezett stílusok */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Minimum magasság a teljes viewport magasságához */
+    min-height: 100vh;
 }
 
-/* Fejléc */
 header {
     display: flex;
     align-items: center;
@@ -17,16 +15,14 @@ header {
     color: white;
 }
 
-/* Logó beállítások */
 .logo {
-    max-width: 150px; /* Maximum szélesség */
-    height: auto; /* Automatikus magasság, hogy megőrizze az arányait */
-    margin-right: 20px; /* Távolság a logó és a menüsáv között */
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
 }
 
-/* Navigációs menü beállítások */
 nav {
-    flex: 1; /* A navigációs sáv kitölti a fennmaradó helyet */
+    flex: 1;
 }
 
 nav ul {
@@ -34,8 +30,8 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between; /* Egyenlő távolság a menüpontok között */
-    align-items: center; /* Függőleges középre igazítás */
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li {
@@ -56,11 +52,10 @@ nav ul li a.github-icon {
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Sötétebb háttér szín hover esetén */
-    border-radius: 4px; /* Lekerekített sarkok */
+    background-color: #555;
+    border-radius: 4px;
 }
 
-/* Szekciók rejtése és megjelenítése */
 .section-hidden {
     display: none;
 }
@@ -69,13 +64,11 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Fő tartalom */
 main {
     padding: 20px;
-    flex: 1; /* Kitölti a fennmaradó helyet, hogy a lábléc a képernyő aljára kerüljön */
+    flex: 1;
 }
 
-/* Requirements szekció */
 #requirements {
     position: relative;
 }
@@ -85,11 +78,11 @@ main {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: #e0e0e0; /* Háttérszín a navigációs menü számára */
+    background-color: #e0e0e0;
     border-radius: 4px;
-    overflow: hidden; /* Az alszekciók keretei nem lógnak ki */
-    width: fit-content; /* A szélesség igazítása az alszekciókhoz */
-    margin-bottom: 20px; /* Alsó margó az alszekciók alatt */
+    overflow: hidden;
+    width: fit-content;
+    margin-bottom: 20px;
 }
 
 #requirements nav ul li {
@@ -99,31 +92,30 @@ main {
 #requirements nav ul li a {
     padding: 10px 15px;
     display: block;
-    color: #333; /* Szöveg színe */
+    color: #333;
     text-decoration: none;
-    background-color: #f0f0f0; /* Alszekciók háttérszíne */
+    background-color: #f0f0f0;
 }
 
 #requirements nav ul li a:hover {
-    background-color: #ddd; /* Hover háttérszín */
+    background-color: #ddd;
 }
 
 #requirements .sub-section-container {
-    display: flex; /* Flexbox használata a két alszekció egymás melletti elrendezéséhez */
-    gap: 0; /* Nincs távolság a két alszekció között */
+    display: flex;
+    gap: 0;
 }
 
 #requirements .sub-section {
-    flex: 1; /* Az alszekciók egyenlő szélességűek lesznek */
+    flex: 1;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    background-color: #fff; /* Alszekciók háttérszíne */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Finom árnyék a jobb láthatóság érdekében */
-    margin: 0; /* Nincs extra margó az alszekciók között */
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
 }
 
-/* Almenüpontok rejtése és megjelenítése */
 .sub-section-hidden {
     display: none;
 }
@@ -132,18 +124,16 @@ main {
     display: block;
 }
 
-/* Lábléc */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: relative; /* Lehetővé teszi a lábléc rögzítését az aljára */
-    bottom: 0; /* Alulra helyezés */
-    width: 100%; /* Kitölti az egész szélességet */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-/* Reszponzív beállítások */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -152,7 +142,7 @@ footer {
 
     .logo {
         margin: 0;
-        max-width: 120px; /* Kisebb logó a kisebb képernyőkön */
+        max-width: 120px;
     }
 
     nav ul {
@@ -161,11 +151,11 @@ footer {
     }
 
     nav ul li {
-        margin: 5px 0; /* Margó a menüpontok között */
+        margin: 5px 0;
     }
 
     #requirements .sub-section-container {
-        flex-direction: column; /* Alszekciók oszlopokban lesznek kisebb képernyőkön */
-        gap: 10px; /* Kisebb távolság a kisebb képernyőkön */
+        flex-direction: column;
+        gap: 10px;
     }
 }
