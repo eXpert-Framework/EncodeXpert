@@ -55,7 +55,7 @@ EncodeXpert is an open-source Python application with a Tkinter GUI, designed to
 
 ¹The app for Intel-based Macs can be downloaded as an **unstable** version.
 
-## 🐞 Bug Tracking
+## 🐞 Issues
 **From the first version to the latest, our bugs were/are these:**
 
 | Bug / Missing Feature                                           | Resolution                                             |
