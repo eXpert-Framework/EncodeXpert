@@ -21,6 +21,72 @@ header {
     margin-right: 20px;
 }
 
+.expertlogo {
+    max-width: 300px;
+    height: auto;
+    margin-right: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead tr {
+    background-color: #333;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+tbody tr {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a.button {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+td a.button:hover {
+    background-color: #555;
+}
+
+section#download .button {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 0px;
+    text-align: center;
+}
+
+section#download .button:hover {
+    background-color: #555;
+}
+
 nav {
     flex: 1;
 }
