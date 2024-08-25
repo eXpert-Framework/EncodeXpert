@@ -1,4 +1,4 @@
-![EncodeXpert_logo](https://github.com/user-attachments/assets/4c45b31d-4e5e-4739-bdb9-272d96c582f6)
+![EncodeXpert_logo](https://github.com/user-attachments/assets/afdef083-af43-4e95-93c8-2305831d0974)
 
 # Effortless Text Manipulation Made Simple
 EncodeXpert is a versatile tool designed for encoding and decoding text in various formats, including Base64, Morse code, Caesar cipher, ROT13, binary, and hexadecimal.  
@@ -20,7 +20,7 @@ eXpert is an open-source software framework designed for encoding and decoding t
 **To install EncodeXpert, please do the following:**
 1. Please donwload EncodeXpert.dmg from GitHub.
 
-<img width="237" alt="Latest-Relase" src="https://github.com/user-attachments/assets/3ce15910-55a7-4241-8326-e800be20305e">
+<img width="237" alt="Latest-Relase" src="https://github.com/user-attachments/assets/c175a3ad-b451-44a2-a40c-72bb595984b0">
 
 2. Once the disk image is downloaded, please open it.
 3. "EncodeXpert" volume will automatically open.
