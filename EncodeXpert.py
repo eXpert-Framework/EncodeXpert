@@ -145,9 +145,13 @@ def caesar_decode(text, shift=3):
 root = tk.Tk()
 root.title("EncodeXpert")
 
+# Configure the main window's grid layout to be responsive
+root.columnconfigure(0, weight=1)
+root.rowconfigure(0, weight=1)
+
 # Create notebook (tabbed view)
 notebook = ttk.Notebook(root)
-notebook.pack(fill=tk.BOTH, expand=True)
+notebook.grid(row=0, column=0, sticky="nsew")
 
 # Encoding frame
 encode_frame = ttk.Frame(notebook)
@@ -157,45 +161,52 @@ notebook.add(encode_frame, text="Encoding")
 decode_frame = ttk.Frame(notebook)
 notebook.add(decode_frame, text="Decoding")
 
+# Make the frames fill the available space
+encode_frame.columnconfigure(0, weight=1)
+encode_frame.rowconfigure(5, weight=1)
+
+decode_frame.columnconfigure(0, weight=1)
+decode_frame.rowconfigure(5, weight=1)
+
 # Encode frame contents
 input_label = ttk.Label(encode_frame, text="Enter text to encode:")
 input_label.grid(row=0, column=0, padx=10, pady=5, sticky="w")
 
 input_entry = tk.Text(encode_frame, height=5, width=40)
-input_entry.grid(row=1, column=0, padx=10, pady=5)
+input_entry.grid(row=1, column=0, padx=10, pady=5, sticky="nsew")
 
 encode_choice = ttk.Combobox(encode_frame, values=["Binary", "Hexadecimal", "ROT13", "Morse", "Base64", "Caesar"])
-encode_choice.grid(row=2, column=0, padx=10, pady=5)
+encode_choice.grid(row=2, column=0, padx=10, pady=5, sticky="")
 encode_choice.current(0)  # Set default selection
 
 encode_button = ttk.Button(encode_frame, text="Encode", command=encode_text)
-encode_button.grid(row=3, column=0, padx=10, pady=10, ipadx=20)
+encode_button.grid(row=3, column=0, padx=10, pady=10, ipadx=20, sticky="")
 
 result_label = ttk.Label(encode_frame, text="Encoded text:")
 result_label.grid(row=4, column=0, padx=10, pady=5, sticky="w")
 
 result_text = tk.Text(encode_frame, height=5, width=40)
-result_text.grid(row=5, column=0, padx=10, pady=5)
+result_text.grid(row=5, column=0, padx=10, pady=5, sticky="nsew")
 
 # Decoding frame contents
 decode_label = ttk.Label(decode_frame, text="Enter text to decode:")
 decode_label.grid(row=0, column=0, padx=10, pady=5, sticky="w")
 
 decode_entry = tk.Text(decode_frame, height=5, width=40)
-decode_entry.grid(row=1, column=0, padx=10, pady=5)
+decode_entry.grid(row=1, column=0, padx=10, pady=5, sticky="nsew")
 
 decode_choice = ttk.Combobox(decode_frame, values=["Binary", "Hexadecimal", "ROT13", "Morse", "Base64", "Caesar"])
-decode_choice.grid(row=2, column=0, padx=10, pady=5)
+decode_choice.grid(row=2, column=0, padx=10, pady=5, sticky="")
 decode_choice.current(0)  # Set default selection
 
 decode_button = ttk.Button(decode_frame, text="Decode", command=decode_text)
-decode_button.grid(row=3, column=0, padx=10, pady=10, ipadx=20)
+decode_button.grid(row=3, column=0, padx=10, pady=10, ipadx=20, sticky="")
 
 decoded_label = ttk.Label(decode_frame, text="Decoded text:")
 decoded_label.grid(row=4, column=0, padx=10, pady=5, sticky="w")
 
 decoded_text_widget = tk.Text(decode_frame, height=5, width=40)
-decoded_text_widget.grid(row=5, column=0, padx=10, pady=5)
+decoded_text_widget.grid(row=5, column=0, padx=10, pady=5, sticky="nsew")
 
 # Run the application
 root.mainloop()
