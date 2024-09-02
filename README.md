@@ -107,5 +107,4 @@ eXpert is an open-source software framework designed for encoding and decoding t
 ## Special Thanks
 **A heartfelt thanks to:**  
 - My programming teacher for their guidance and motivation.
-- My friend David for his invaluable alpha, beta, and prototype testing.
 - GitHub user [P0203K](https://github.com/P0203K) for solving a crucial issue. Your contribution is greatly appreciated!
