@@ -75,11 +75,11 @@ eXpert is an open-source software framework designed for encoding and decoding t
 | Issue                                                      |	Resolution                                  |
 | ---------------------------------------------------------- | -------------------------------------------- |
 | MacOS Gatekeeper may flag the app as malware               |	Potential fix identified for future updates |
-| The app icon appears oversized compared to other Mac apps  |	Resolution in progress                      |
-| The app is not truly native; additional packages required  |	Potential fix identified for future updates |
+| The app icon appears oversized compared to other Mac apps  |	Potential fix identified for future updates |
+| The app is not truly native; additional packages required  |	Resolved in recent update                   |
 | Intel-based Macs had trouble running the application       |	Resolved in recent update                   |
 | GUI issues when toggling fullscreen                        |	Potential fix identified for future updates |
-| Confirmation alerts may appear after running the installer | Potential fix identified for future updates  |
+| Confirmation alerts may appear after running the installer |  Potential fix identified for future updates |
 
 ## Testing
 **EncodeXpert has been tested on the following devices:**
