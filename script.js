@@ -21,3 +21,26 @@ function showSubSection(subSectionId) {
     selectedSubSection.classList.add('sub-section-visible');
     selectedSubSection.classList.remove('sub-section-hidden');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Find all dropdown buttons
+    var dropdowns = document.querySelectorAll('.dropdown');
+
+    // Attach click event to each dropdown button
+    dropdowns.forEach(function(dropdown) {
+        var button = dropdown.querySelector('.dropbtn');
+        button.addEventListener('click', function() {
+            // Toggle the "show" class on the dropdown content
+            dropdown.classList.toggle('show');
+        });
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener('click', function(event) {
+        dropdowns.forEach(function(dropdown) {
+            if (!dropdown.contains(event.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
+    });
+});
