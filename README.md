@@ -18,53 +18,32 @@ eXpert is an open-source software framework designed for encoding and decoding t
 
 ## Installation Guide
 **To install EncodeXpert, please do the following:**
-1. Please donwload EncodeXpert.dmg from GitHub.
+1. Please donwload EncodeXpert.dmg from GitHub or from our website.
 
 <img width="237" alt="Latest-Relase" src="https://github.com/user-attachments/assets/c175a3ad-b451-44a2-a40c-72bb595984b0">
 
-2. Once the disk image is downloaded, please open it.
-3. "EncodeXpert" volume will automatically open.
-4. Please double-click the installer app.
-5. MacOS Gatekeeper alert may appear:
+2. Once the zip file is downloaded, please open it.
+3. "EncodeXpert" app will be automatically unzipped.
 
->"EncodeXpert_Installer" cannot be open because the developer cannot be verified.
-
-6. Please control-click the installer and select "Open"
-7. MacOS Gatekeeper alert may appear:
-
->"EncodeXpert_Installer" may harm your Mac. Do you want to open it?
-
-8. Select "Open" under the Gatekeeper alert.
-9. The installer will open.
-10. Please install the latest version of the Python programming language:
-
-- If Python is installed, press [ENTER]
-- If Python is not installed, please visit [https://python.org/downloads](url)
-
-11. Once Python is installed, please install the Tkinter framework.
-12. The installer will do this for you, if you allow this.
-13. The installer dialog should appear:
-
->Successfully installed!
-
-14. Please drag EncodeXpert into the Applications folder.
-15. When you first open EncodeXpert, a MacOS Gatekeeper dialog may appear:
+4. Please drag EncodeXpert into the Applications folder.
+5. When you first open EncodeXpert, a MacOS Gatekeeper dialog may appear:
 
 >"EncodeXpert" cannot be opened because the developer cannot be verified.
 
-16. Please control-click the installer and select open.
-17. MacOS Gatekeeper alert may appear:
+6. Please control-click the installer and select open.
+7. MacOS Gatekeeper alert may appear:
 
 >"EncodeXpert' may harm your Mac. Do you want to open it?
 
-18. Select "Open" under the Gatekeeper Alert.
-19. EncodeXpert will open.
+8. Select "Open" under the Gatekeeper alert.
+9. EncodeXpert will open.
 
 **Thanks for installing EncodeXpert! :-)**
 
 ## News
 **v1.0.0:** The first version of EncodeXpert has been released! 🎉  
 **v1.0.1:** Added support for Intel-based Macs in this build¹!  
+**v1.0.2:** The GUI is now reponsive, thanks to GitHub user P0203K!
 
 ¹Please note that the Intel-based Mac version is classified as unstable.  
 
