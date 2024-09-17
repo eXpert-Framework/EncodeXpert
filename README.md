@@ -45,8 +45,6 @@ eXpert is an open-source software framework designed for encoding and decoding t
 **v1.0.1:** Added support for Intel-based Macs in this build¹!  
 **v1.0.2:** The GUI is now reponsive, thanks to GitHub user P0203K!
 
-¹Please note that the Intel-based Mac version is classified as unstable.  
-
 ## Issues
 
 **Here is a summary of known issues and their resolutions:**
