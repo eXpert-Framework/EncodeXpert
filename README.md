@@ -65,7 +65,7 @@ eXpert is an open-source software framework designed for encoding and decoding t
 - Apple MacBook with M1 Chip
 - Apple MacBook with Intel i5 Processor
 
-## Requirements
+## Compatibility
 ### Hardware
 **EncodeXpert is compatible with the following devices:**  
 - MacBook: 2014 or earlier models
