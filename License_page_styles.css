@@ -1,0 +1,281 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.expertlogo {
+    max-width: 300px;
+    height: auto;
+    margin-right: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead tr {
+    background-color: #333;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+tbody tr {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f4f4f4;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+td a.button {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+td a.button:hover {
+    background-color: #555;
+}
+
+section#download .button {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 0px;
+    text-align: center;
+}
+
+section#download .button:hover {
+    background-color: #555;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a.github-icon {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+
+.section-hidden {
+    display: none;
+}
+
+.section-visible {
+    display: block;
+}
+
+main {
+    padding: 20px;
+    flex: 1; 
+}
+
+#requirements {
+    position: relative;
+}
+
+#requirements nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+#requirements nav ul li {
+    margin: 0;
+}
+
+#requirements nav ul li a {
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+    background-color: #f0f0f0;
+}
+
+#requirements nav ul li a:hover {
+    background-color: #ddd;
+}
+
+#requirements .sub-section-container {
+    display: flex;
+    gap: 0;
+}
+
+#requirements .sub-section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+.sub-section-hidden {
+    display: none;
+}
+
+.sub-section-visible {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin: 0;
+        max-width: 120px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #requirements .sub-section-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on click */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown.show .dropbtn {
+    background-color: #555;
+}
