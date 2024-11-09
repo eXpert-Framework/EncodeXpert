@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncodeXpert</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="EncodeXpert Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#download" onclick="showSection('download')">Download</a></li>
+                <li><a href="#license" onclick="window.open('License_page_main.html', '_blank')">License Terms</a></li>
+                <li><a href="#news" onclick="showSection('news')">News</a></li>
+                <li><a href="#issues" onclick="showSection('issues')">Issues</a></li>
+                <li><a href="#testing" onclick="showSection('testing')">Testing</a></li>
+                <li><a href="#requirements" onclick="showSection('requirements')">Compatiblity</a></li>
+                <li><a href="#special-thanks" onclick="showSection('special-thanks')">Special Thanks</a></li>
+                <li><a href="https://github.com/eXpert-Framework/EncodeXpert" target="_blank" class="github-icon"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="boxed section-visible">
+            <h1>Effortless Text Manipulation Made Simple</h1>
+            <p>EncodeXpert is a versatile tool designed for encoding and decoding text in various formats, including Base64, Morse code, Caesar cipher, ROT13, binary, and hexadecimal.<br>It provides quick and easy transformations without needing an internet connection.</p>
+        </section>
+        <section id="about" class="boxed section-hidden">
+            <h2>About</h2>
+            <p>EncodeXpert is an open-source application developed in Python with a Tkinter graphical user interface.<br>It is crafted to simplify the process of encoding and decoding text across multiple formats, catering to developers, cryptography enthusiasts, and anyone in need of efficient offline text transformations.</p>
+            <p>EncodeXpert is a part of the eXpert Framework.</p>
+            <img src="eXpert_logo.black.png" alt="eXpert Framework Logo" class="expertlogo">
+            <h3>About the eXpert Framework</h3>
+            <p>eXpert is an open-source software framework designed for encoding and decoding tasks.<br>It provides a robust set of tools for developers to easily implement and manage various encoding schemes.<br>With a focus on flexibility and ease of use, eXpert simplifies complex encoding processes, making it an ideal choice for both beginners and advanced users in the coding community.<br>Whether you're working on simple projects or large-scale applications, eXpert offers the versatility needed to handle a wide range of encoding tasks efficiently.</p>
+        </section>
+        <section id="download" class="boxed section-hidden">
+            <h2>Download</h2>
+            <p><strong>To download the latest version of EncodeXpert, choose your platform:</strong></p>
+            <div class="button-container">
+                <a href="EncodeXpert_v1.0.2.zip" download class="button"> Download for Mac</a>
+            </div>
+            <p>You can also download the older versions:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EncodeXpert <strong>v1.0.0</strong></td>
+                        <td><a href="EncodeXpert_v1.0.0.zip" download class="button"> Download for Mac</a></td>
+                    </tr>
+                    <tr>
+                        <td>EncodeXpert <strong>v1.0.1</strong></td>
+                        <td><a href="EncodeXpert_v1.0.1.zip" download class="button"> Download for Mac</a></td>
+                    </tr>
+                    <tr>
+                        <td>EncodeXpert <strong>v1.0.2</strong></td>
+                        <td><a href="EncodeXpert_v1.0.2.zip" download class="button"> Download for Mac</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p>If you are having trouble with the installation, please report it <a href="https://github.com/eXpert-Framework/EncodeXpert/issues" >here</a>.</p>
+        </section>
+        <section id="news" class="boxed section-hidden">
+            <h2>News</h2>
+            <p><strong>v1.0.0:</strong> The first version of EncodeXpert has been released! 🎉<br>
+            <strong>v1.0.1:</strong> Added support for Intel-based Macs in this build¹!<br>
+            <strong>v1.0.2:</strong>The GUI is now reponsive, thanks to GitHub user P0203K!</p>
+        </section>
+        <section id="license" class="boxed section-hidden">
+            <h2>License Terms</h2>
+            <p>Copyright 2024 Andrew Baki. All rights reserved.</p>
+            <div>
+            <a href="License_page_main.html" target="_blank" class="button">View license</a>
+        </section>
+        <section id="issues" class="boxed section-hidden">
+            <h2>Issues</h2>
+            <p><strong>Here is a summary of known issues and their resolutions:</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Issue</th>
+                        <th>Resolution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MacOS Gatekeeper may flag the app as malware</td>
+                        <td>Potential fix identified for future updates</td>
+                    </tr>
+                    <tr>
+                        <td>The app icon appears oversized compared to other Mac apps</td>
+                        <td>Potential fix identified for future updates</td>
+                    </tr>
+                    <tr>
+                        <td>The app is not truly native; additional packages required</td>
+                        <td>Resolved in recent update</td>
+                    </tr>
+                    <tr>
+                        <td>Intel-based Macs had trouble running the application</td>
+                        <td>Resolved in recent update</td>
+                    </tr>
+                    <tr>
+                        <td>GUI issues when toggling fullscreen</td>
+                        <td>Resolved by GitHub user <a href="https://github.com/P0203K" target="_blank">P0203K</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p>If you find an issue, please report it <a href="https://github.com/eXpert-Framework/EncodeXpert/issues" >here</a>.</p>
+        </section>
+        <section id="testing" class="boxed section-hidden">
+            <h2>Testing</h2>
+            <p><strong>EncodeXpert has been tested on the following devices:</strong></p>
+            <ul>
+                <li>Apple iMac with M1 Chip</li>
+                <li>Apple iMac with Intel i5 Processor</li>
+                <li>Apple MacBook with M1 Chip</li>
+                <li>Apple MacBook with Intel i5 Processor</li>
+            </ul>
+        </section>
+        <section id="requirements" class="boxed section-hidden">
+            <h2>Compatibility</h2>
+            <div>
+            <p><strong>EncodeXpert is compatible with the following devices:</strong></p>
+            <ul>
+                <li>MacBook: 2014 or earlier models</li>
+                <li>MacBook Air: mid-2012 or earlier models</li>
+                <li>MacBook Pro: mid-2012 or earlier models</li>
+                <li>Mac mini: 2012 or earlier models</li>
+                <li>iMac: late 2013 or earler models</li>
+                <li>Mac Pro: 2012 or earlier models</li>
+            </ul>
+            </div>
+        </section>
+        <section id="special-thanks" class="boxed section-hidden">
+            <h2>Special Thanks</h2>
+            <p><strong>A heartfelt thanks to:</strong></p>
+            <ul>
+                <li>My programming teacher for his guidance and motivation.</li>
+                <li>GitHub user <a href="https://github.com/P0203K" target="_blank">P0203K</a> for solving a crucial issue. Your contribution is greatly appreciated!
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EncodeXpert. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
