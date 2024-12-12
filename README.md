@@ -16,27 +16,14 @@ eXpert is an open-source software framework designed for encoding and decoding t
 **To download EncodeXpert, please read the installation guide:**  
 (Step-by-step guide in it)
 
-## Installation Guide
+### Installation Guide
 **To install EncodeXpert, please do the following:**
-1. Please donwload EncodeXpert.dmg from GitHub or from our website.
+1. Please donwload EncodeXpert from GitHub or from our website.
 
 <img width="237" alt="Latest-Relase" src="https://github.com/user-attachments/assets/c175a3ad-b451-44a2-a40c-72bb595984b0">
 
 2. Once the zip file is downloaded, please open it.
-3. "EncodeXpert" app will be automatically unzipped.
-
-4. Please drag EncodeXpert into the Applications folder.
-5. When you first open EncodeXpert, a MacOS Gatekeeper dialog may appear:
-
->"EncodeXpert" cannot be opened because the developer cannot be verified.
-
-6. Please control-click the installer and select open.
-7. MacOS Gatekeeper alert may appear:
-
->"EncodeXpert' may harm your Mac. Do you want to open it?
-
-8. Select "Open" under the Gatekeeper alert.
-9. EncodeXpert will open.
+3. Now you can just add the app to the applications.
 
 **Thanks for installing EncodeXpert! :-)**
 
@@ -44,6 +31,7 @@ eXpert is an open-source software framework designed for encoding and decoding t
 **v1.0.0:** The first version of EncodeXpert has been released! 🎉  
 **v1.0.1:** Added support for Intel-based Macs in this build¹!  
 **v1.0.2:** The GUI is now reponsive, thanks to GitHub user P0203K!
+**Update:** Windows build of EncodeXpert finally relased!
 
 ## Issues
 
