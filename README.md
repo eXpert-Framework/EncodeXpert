@@ -29,9 +29,10 @@ eXpert is an open-source software framework designed for encoding and decoding t
 
 ## News
 **v1.0.0:** The first version of EncodeXpert has been released! 🎉  
-**v1.0.1:** Added support for Intel-based Macs in this build¹!  
+**v1.0.1:** Added support for Intel-based Macs in this build!  
 **v1.0.2:** The GUI is now reponsive, thanks to GitHub user P0203K!
 **Update:** Windows build of EncodeXpert finally relased!
+**Update:** More GitHub documentation added!
 
 ## Issues
 
