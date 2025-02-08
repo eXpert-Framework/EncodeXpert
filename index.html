@@ -1,13 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EncodeXpert</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            max-width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a.github-icon {
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .boxed {
+            background-color: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-visible {
+            display: block;
+        }
+
+        .section-hidden {
+            display: none;
+        }
+
+        #requirements nav ul li a {
+            padding: 8px 12px;
+            color: #333;
+            background-color: #ccc;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #requirements nav ul li a:hover {
+            background-color: #bbb;
+        }
+
+        .sub-section-visible {
+            display: block;
+            visibility: visible;
+        }
+
+        .sub-section-hidden {
+            display: none;
+            visibility: visible;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        th, td {
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+        }
+
+        thead tr {
+            background-color: #333;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        } 
+
+        .button, .button-container a {
+            background-color: #333;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .button + p, .button-container + p {
+            margin-top: 15px;
+        }
+
+        .button:hover, .button-container a:hover {
+            background-color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .expertlogo {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+        .logo {
+            max-width: 120px;
+        }
+
+        nav ul {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        header, footer, nav ul li, .button, .boxed {
+            border-radius: 10px;
+        }
+
+        img.logo, img.expertlogo {
+            border-radius: 10px;
+        }
+
+        table, table th, table td {
+            border-radius: 10px;
+        }
+
+        .button-container, .button {
+            border-radius: 10px;
+        }
+
+        section {
+            border-radius: 10px;
+        }
+    </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <script>
+    function showSection(sectionId) {
+    const sections = document.querySelectorAll('main > section');
+    sections.forEach(section => {
+        section.classList.add('section-hidden');
+        section.classList.remove('section-visible');
+    });
+
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.add('section-visible');
+    selectedSection.classList.remove('section-hidden');
+}
+        const createModal1 = () => {
+            const modal1 = document.createElement("div");
+            modal1.id = "custom-modal-1";
+            modal1.style.position = "fixed";
+            modal1.style.top = "0";
+            modal1.style.left = "0";
+            modal1.style.width = "100vw";
+            modal1.style.height = "100vh";
+            modal1.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+            modal1.style.display = "none";
+            modal1.style.alignItems = "center";
+            modal1.style.justifyContent = "center";
+            modal1.style.zIndex = "1000";
+
+            const modal1Content = document.createElement("div");
+            modal1Content.style.backgroundColor = "white";
+            modal1Content.style.padding = "20px";
+            modal1Content.style.borderRadius = "8px";
+            modal1Content.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+            modal1Content.style.textAlign = "center";
+            modal1Content.style.width = "600px";
+
+            const modal1Title = document.createElement("h2");
+            modal1Title.id = "modal-title-1";
+            modal1Content.appendChild(modal1Title);
+
+            const modal1Text = document.createElement("p");
+            modal1Text.id = "modal-text-1";
+            modal1Content.appendChild(modal1Text);
+
+            const closeButton1 = document.createElement("button");
+            closeButton1.textContent = "OK";
+            closeButton1.style.marginTop = "15px";
+            closeButton1.style.padding = "10px 20px";
+            closeButton1.style.border = "none";
+            closeButton1.style.borderRadius = "5px";
+            closeButton1.style.backgroundColor = "#007BFF";
+            closeButton1.style.color = "white";
+            closeButton1.style.cursor = "pointer";
+            closeButton1.onclick = () => (modal1.style.display = "none");
+
+            modal1Content.appendChild(closeButton1);
+            modal1.appendChild(modal1Content);
+            document.body.appendChild(modal1);
+        };
+
+        const showModal1 = (title, text) => {
+            const modal1 = document.getElementById("custom-modal-1");
+            if (!modal1) {
+                createModal1();
+            }
+            document.getElementById("modal-title-1").textContent = title;
+            document.getElementById("modal-text-1").textContent = text;
+            document.getElementById("custom-modal-1").style.display = "flex";
+        };
+
+        createModal1();
+
+        const createModal2 = () => {
+            const modal2 = document.createElement("div");
+            modal2.id = "custom-modal-2";
+            modal2.style.position = "fixed";
+            modal2.style.top = "0";
+            modal2.style.left = "0";
+            modal2.style.width = "100vw";
+            modal2.style.height = "100vh";
+            modal2.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+            modal2.style.display = "none";
+            modal2.style.alignItems = "center";
+            modal2.style.justifyContent = "center";
+            modal2.style.zIndex = "1000";
+
+            const modal2Content = document.createElement("div");
+            modal2Content.style.backgroundColor = "white";
+            modal2Content.style.padding = "20px";
+            modal2Content.style.borderRadius = "8px";
+            modal2Content.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+            modal2Content.style.textAlign = "center";
+            modal2Content.style.width = "600px";
+
+            const modal2Title = document.createElement("h2");
+            modal2Title.id = "modal-title-2";
+            modal2Content.appendChild(modal2Title);
+
+            const modal2Text = document.createElement("p");
+            modal2Text.id = "modal-text-2";
+            modal2Content.appendChild(modal2Text);
+
+            const downloadButton = document.createElement("button");
+            downloadButton.id = "download-button";
+            downloadButton.textContent = "Download";
+            downloadButton.style.marginTop = "15px";
+            downloadButton.style.padding = "10px 20px";
+            downloadButton.style.border = "none";
+            downloadButton.style.borderRadius = "5px";
+            downloadButton.style.backgroundColor = "#007BFF";
+            downloadButton.style.color = "white";
+            downloadButton.style.cursor = "pointer";
+
+            const closeButton2 = document.createElement("button");
+            closeButton2.id = "close-button-2";
+            closeButton2.textContent = "Close";
+            closeButton2.style.marginTop = "15px";
+            closeButton2.style.marginLeft = "10px";
+            closeButton2.style.padding = "10px 20px";
+            closeButton2.style.border = "none";
+            closeButton2.style.borderRadius = "5px";
+            closeButton2.style.backgroundColor = "#007BFF";
+            closeButton2.style.color = "white";
+            closeButton2.style.cursor = "pointer";
+            closeButton2.onclick = () => (modal2.style.display = "none");
+
+            modal2Content.appendChild(downloadButton);
+            modal2Content.appendChild(closeButton2);
+            modal2.appendChild(modal2Content);
+            document.body.appendChild(modal2);
+        };
+
+        const showModal2 = (title, text, fileName) => {
+            let modal2 = document.getElementById("custom-modal-2");
+            if (!modal2) {
+                createModal2();
+                modal2 = document.getElementById("custom-modal-2");
+            }
+
+            const modal2Title = document.getElementById("modal-title-2");
+            const modal2Text = document.getElementById("modal-text-2");
+            modal2Title.textContent = title;
+            modal2Text.textContent = text;
+            modal2.style.display = "flex";
+
+            const downloadButton = document.getElementById("download-button");
+            downloadButton.onclick = () => {
+                const link = document.createElement("a");
+                link.href = fileName;
+                link.download = fileName;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            };
+        };
+
+        createModal2();
+
+</script>
 </head>
 <body>
     <header>
@@ -15,8 +372,15 @@
         <nav>
             <ul>
                 <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#download" onclick="showSection('download')">Download</a></li>
+                <li><a href="#license" onclick="window.open('License_page_main.html', '_blank')">License Terms</a></li>
+                <li><a href="#news" onclick="showSection('news')">News</a></li>
+                <li><a href="#issues" onclick="showSection('issues')">Issues</a></li>
+                <li><a href="#testing" onclick="showSection('testing')">Testing</a></li>
+                <li><a href="#requirements" onclick="showSection('requirements')">Compatibility</a></li>
+                <li><a href="#special-thanks" onclick="showSection('special-thanks')">Special Thanks</a></li>
                 <li><a href="https://github.com/eXpert-Framework/EncodeXpert" target="_blank" class="github-icon"><i class="fab fa-github"></i></a></li>
-                <li><a>WEBSITE UNDER MAINTENANCE</a></li>
             </ul>
         </nav>
     </header>
@@ -25,10 +389,131 @@
             <h1>Effortless Text Manipulation Made Simple</h1>
             <p>EncodeXpert is a versatile tool designed for encoding and decoding text in various formats, including Base64, Morse code, Caesar cipher, ROT13, binary, and hexadecimal.<br>It provides quick and easy transformations without needing an internet connection.</p>
         </section>
+        <section id="about" class="boxed section-hidden">
+            <h2>About</h2>
+            <p>EncodeXpert is an open-source application developed in Python with a Tkinter graphical user interface.<br>It is crafted to simplify the process of encoding and decoding text across multiple formats, catering to developers, cryptography enthusiasts, and anyone in need of efficient offline text transformations.</p>
+            <p>EncodeXpert is a part of the eXpert Framework.</p>
+            <img src="eXpert_logo.black.png" alt="eXpert Framework Logo" class="expertlogo">
+            <h3>About the eXpert Framework</h3>
+            <p>eXpert is an open-source software framework designed for encoding and decoding tasks.<br>It provides a robust set of tools for developers to easily implement and manage various encoding schemes.<br>With a focus on flexibility and ease of use, eXpert simplifies complex encoding processes, making it an ideal choice for both beginners and advanced users in the coding community.<br>Whether you're working on simple projects or large-scale applications, eXpert offers the versatility needed to handle a wide range of encoding tasks efficiently.</p>
+        </section>
+        <section id="download" class="boxed section-hidden">
+            <h2>Download</h2>
+            <p><strong>To download the latest version of EncodeXpert, choose your platform:</strong></p>
+            <div class="button-container">
+                <a href="EncodeXpert_v1.0.2-Mac.zip" download class="button"> Download for Mac</a>
+                <a href="EncodeXpert_v1.0.2-Win.zip" download class="button">Download for Windows</a>
+            </div>
+            <p>You can also download the older versions:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Download for Mac</th>
+                        <th>Download for Win</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>EncodeXpert <strong>v1.0.0</strong></td>
+                        <td><a href="EncodeXpert_v1.0.0-Mac.zip" download class="button"> Download for Mac</a></td>
+                        <td><a href="javascript:showModal1('Windows build not available', 'Please choose a newer version. The minimum supported version is v1.0.2')" class="button">Download for Windows</a></td>
+                    </tr>
+                    <tr>
+                        <td>EncodeXpert <strong>v1.0.1</strong></td>
+                        <td><a href="EncodeXpert_v1.0.1-Mac.zip" download class="button"> Download for Mac</a></td>
+                        <td><a href="javascript:showModal1('Windows build not available', 'Please choose a newer version. The minimum supported version is v1.0.2')" class="button">Download for Windows</a></td>
+                    </tr>
+                    <tr>
+                        <td>EncodeXpert <strong>v1.0.2</strong></td>
+                        <td><a href="javascript:showModal2('Accept EncodeXpert License', 'With downloading, you accept the Terms of Conditions of EncodeXpert. Please note that EncodeXpert is under Copyright, and licensed with Apache License 2.', 'EncodeXpert_v1.0.2_Mac.zip')" class="button"> Download for Mac</a></td>
+                        <td><a href="EncodeXpert_v1.0.2_Win.zip" download class="button">Download for Windows</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p>If you are having trouble with the installation, please report it <a href="https://github.com/eXpert-Framework/EncodeXpert/issues" >here</a>.</p>
+        </section>
+        <section id="news" class="boxed section-hidden">
+            <h2>News</h2>
+            <p><strong>v1.0.0:</strong> The first version of EncodeXpert has been released! 🎉<br>
+            <strong>v1.0.1:</strong> Added support for Intel-based Macs in this build!<br>
+            <strong>v1.0.2:</strong> The GUI is now reponsive, thanks to GitHub user P0203K!<br>
+            <strong>Update:</strong> Windows build of EncodeXpert finally relased!<br>
+            <strong>Update:</strong> More GitHub documentation added!</p>
+        </section>
+        <section id="license" class="boxed section-hidden">
+            <h2>License Terms</h2>
+            <p>Copyright 2024 Andrew Baki. All rights reserved.</p>
+            <a href="License_page_main.html" target="_blank" class="button">View license</a>
+        </section>
+        <section id="issues" class="boxed section-hidden">
+            <h2>Issues</h2>
+            <p><strong>Here is a summary of known issues and their resolutions:</strong></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Issue</th>
+                        <th>Resolution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MacOS Gatekeeper may flag EncodeXpert as malware</td>
+                        <td>Potential fix identified for future updates</td>
+                    </tr>
+                    <tr>
+                        <td>The app icon appears oversized compared to other Mac apps</td>
+                        <td>Potential fix identified for future updates</td>
+                    </tr>
+                    <tr>
+                        <td>Intel-based Macs had trouble running the application</td>
+                        <td>Resolved in recent update</td>
+                    </tr>
+                    <tr>
+                        <td>GUI issues when toggling fullscreen</td>
+                        <td>Resolved by GitHub user <a href="https://github.com/P0203K" target="_blank">P0203K</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <p>If you find an issue, please report it <a href="https://github.com/eXpert-Framework/EncodeXpert/issues" >here</a>.</p>
+        </section>
+        <section id="testing" class="boxed section-hidden">
+            <h2>Testing</h2>
+            <p><strong>EncodeXpert has been tested on the following devices:</strong></p>
+            <ul>
+                <li>Apple iMac with M1 Chip</li>
+                <li>Apple iMac with Intel i5 Processor</li>
+                <li>Apple MacBook with M1 Chip</li>
+                <li>Apple MacBook with Intel i5 Processor</li>
+            </ul>
+        </section>
+        <section id="requirements" class="boxed section-hidden">
+            <h2>Compatibility</h2>
+            <div>
+            <p><strong>EncodeXpert is compatible with the following devices:</strong></p>
+            <ul>
+                <li>MacBook: 2014 or earlier models</li>
+                <li>MacBook Air: mid-2012 or earlier models</li>
+                <li>MacBook Pro: mid-2012 or earlier models</li>
+                <li>Mac mini: 2012 or earlier models</li>
+                <li>iMac: late 2013 or earler models</li>
+                <li>Mac Pro: 2012 or earlier models</li>
+            </ul>
+            </div>
+        </section>
+        <section id="special-thanks" class="boxed section-hidden">
+            <h2>Special Thanks</h2>
+            <p><strong>A heartfelt thanks to:</strong></p>
+            <ul>
+                <li>My programming teacher for his guidance and motivation.</li>
+                <li>GitHub user <a href="https://github.com/P0203K" target="_blank">P0203K</a> for solving a crucial issue. Your contribution is greatly appreciated!
+            </ul>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 EncodeXpert. All rights reserved.</p>
+        <p>&copy; 2024 EncodeXpert. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
