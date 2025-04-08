@@ -1,4 +1,5 @@
-![banner 001](https://github.com/user-attachments/assets/bd16395a-e4ad-423d-984c-433ef281e155)
+![banner 001](https://github.com/user-attachments/assets/edc2caae-c97c-4aa2-887b-021abddafd18)
+
 # Effortless Text Manipulation Made Simple
 EncodeXpert is a versatile tool designed for encoding and decoding text in various formats, including Base64, Morse code, Caesar cipher, ROT13, binary, and hexadecimal.  
 It provides quick and easy transformations without needing an internet connection.
