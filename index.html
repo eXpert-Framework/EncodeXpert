@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="EncodeXpert - Text-manipulator app for cryptographers, focused on Bitcoin and encryption.">
+    <title>EncodeXpert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tahoma&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            user-select: none;
+            overflow: hidden;
+        }
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .logo img {
+            width: 320px;
+            height: auto;
+            pointer-events: none;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        section {
+            display: none;
+            padding: 40px;
+            text-align: center;
+        }
+        section.active {
+            display: block;
+        }
+        section h2 {
+            font-size: 2em;
+        }
+        .footer {
+            background-color: #ffffff;
+            color: #888;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8em;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+        .footer a {
+            color: #00159B;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <br>
+    <div class="logo">
+        <img src="logo.png" alt="EncodeXpert">
+    </div>
+    <br>
+</header>
+
+<nav>
+    <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
+    <a href="javascript:void(0)" onclick="showSection('about')">About</a>
+    <a href="javascript:void(0)" onclick="showSection('download')">Download</a>
+    <a href="javascript:void(0)" onclick="showSection('legal')">Legal</a>
+    <a href="javascript:void(0)" onclick="showSection('github')">GitHub</a>
+</nav>
+
+<section id="home" class="active">
+    <h2>Welcome!</h2>
+    <h3>Effortless Text Manipulation Made Simple</h3>
+    <p>EncodeXpert is a versatile tool designed for encoding and decoding text in various formats,<br>including Base64, Morse code, Caesar cipher, ROT13, binary, and hexadecimal.<br>It provides quick and easy transformations without needing an internet connection.</p>
+</section>
+
+<section id="about">
+    <h2>About</h2>
+    <p>EncodeXpert crafted to simplify the process of encoding and decoding text across multiple<br>formats, catering to developers, cryptography enthusiasts,<br>and anyone in need of efficient, offline text transformations.</p>
+    <p>EncodeXpet is a part of the eXpert Framework.</p>
+</section>
+
+<section id="download">
+    <h2>Thanks!</h2>
+    <p>Thank you for downloading EncodeXpert!<br>Your download should start automatically.</p>
+    <p>If you're having trouble, please report it <a href="https://github.com/eXpert-Framework/EncodeXpert/issues">here.</a></p>
+    <p>By downloading, you accept our License.</p>
+</section>
+
+<section id="legal">
+    <h2>Legal</h2>
+    <p>&copy Copyright 2024-<script>document.write(new Date().getFullYear())</script> Andrew Baki. All rights reserved.</p>
+    <p>Licensed under the Apache License, Version 2.0 (the "License")<br>you may not use this file except in compliance with the License.<br>You may obtain a copy of the License <a href="http://www.apache.org/licenses/LICENSE-2.0">here<a>.<br>Unless required by applicable law or agreed to in writing, software<br>distributed under the License is distributed on an "AS IS" BASIS,<br>WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>See the License for the specific language governing permissions and<br>limitations under the License.</p>
+    <p>Icon by David Polgár-Szabó. &copy Copyright <script>document.write(new Date().getFullYear())</script>.</p>
+</section>
+
+<section id="github">
+    <h2>GitHub</h2>
+    <p>Check out the source code and contribute<br>to EncodeXpert on GitHub!</p>
+    <a href="https://github.com/your-github-link" class="button">Visit GitHub repo</a>
+</section>
+
+<div class="footer">
+    <p>&copy; Copyright <script>document.write(new Date().getFullYear())</script> Andrew Baki.</a></p>
+</div>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => section.classList.remove('active'));
+
+        const activeSection = document.getElementById(sectionId);
+        activeSection.classList.add('active');
+
+        if (sectionId === 'download') {
+            startDownload();
+        }
+    }
+
+    function startDownload() {
+        const userAgent = navigator.userAgent;
+
+        let downloadLink = '';
+        if (userAgent.indexOf("Windows") !== -1) {
+            downloadLink = 'https://github.com/eXpert-Framework/EncodeXpert/releases/download/v1.0.2/EncodeXpert_v1.0.2_Win.zip';
+        } else if (userAgent.indexOf("Mac") !== -1) {
+            downloadLink = 'https://github.com/eXpert-Framework/EncodeXpert/releases/download/v1.0.2/EncodeXpert_v1.0.2_Mac.zip';
+        } else if (userAgent.indexOf("Linux") !== -1) {
+            downloadLink = 'https://github.com/eXpert-Framework/EncodeXpert/archive/refs/tags/v1.0.2.tar.gz';
+        }
+
+        // Start the download immediately
+        if (downloadLink) {
+            window.location.href = downloadLink;
+        }
+    }
+</script>
+
+</body>
+</html>
